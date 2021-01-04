@@ -1,11 +1,14 @@
 <!-- Async font loading -->
 <script>
   window.WebFontConfig = {
-      custom: {
-          families: ['Spoqa Han Sans:100,300,400,700'],
-          urls: ['https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css']
+    //   custom: {
+    //       families: ['Spoqa Han Sans:100,300,400,700'],
+    //       urls: ['https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css']
+    //   },
+      google: {
+          families: ['Inconsolata']
       },
-      timeout: 60000
+      timeout: 4000
   };
   (function(d) {
       var wf = d.createElement('script'), s = d.scripts[0];
