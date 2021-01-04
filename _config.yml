@@ -25,10 +25,10 @@ navigation:
     url: /
   - name: Archive
     url: /archive
-  - name: About
-    url: /about
   - name: Tags
     url: /tags
+  - name: About
+    url: /about
   # - name: Theme
   #   url: https://github.com/AWEEKJ/kiko-now
 
@@ -39,11 +39,11 @@ paginate: 5
 footer-links:
   behance: # https://www.behance.net/<username>
   dribbble:
-  email: phamnguyenanhhuy@gmail.com
   facebook:
   flickr:
-  github: https://github.com/coder7eeN
+  github: coder7eeN
   googleplus: # anything in your profile username that comes after plus.google.com/
+  email: phamnguyenanhhuy@gmail.com
   instagram:
   linkedin:
   pinterest:
