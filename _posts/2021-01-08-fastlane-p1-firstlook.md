@@ -15,7 +15,7 @@ Vậy giải pháp là gì, đó chính là CD **(Continuous Delivery)**. Hiểu
   <img src="/images/blog_illustration/fastlane_usage.png" width="70%" />
 </p>
 
-Chả có hình nào minh họa cho Android nên mình đành lấy bên iOS vậy. Như bạn thấy, Fastlane là tool giúp làm những công việc như chụp ảnh màn hình, thông báo lên Slack, đẩy bản build đến cho tester hoặc release phần mềm lên store một cách tự động. Ngoài những thứ magic vầy, Fastlane còn làm được gì nữa, hãy tham khảo tại [link](https://docs.fastlane.tools/#why-fastlane) này. 
+Chả có hình nào minh họa cho Android nên mình đành lấy bên iOS vậy. Như bạn thấy, Fastlane là tool giúp làm những công việc như chụp ảnh màn hình, thông báo lên Slack, đẩy bản build đến cho tester hoặc release phần mềm lên store một cách tự động. Ngoài những việc như vậy, Fastlane còn làm được nhiều thứ hơn nữa, tham khảo tại [link](https://docs.fastlane.tools/#why-fastlane) này để biết thêm nè. 
 
 ## 2. Cài đặt Fastlane
 
@@ -155,7 +155,7 @@ Kết quả
 fastlane.tools finished successfully 🎉
 ```
 
-Oh yeahhh!! vậy là bạn đã nắm được cách để cấu hình lane chạy đúng với mục đích của mình.
+Oh yeahhh!! vậy là chúng ta đã tạo được lane chạy đúng với mục đích như đã đề ra.
 
 ## 4. Save the best for last
 
