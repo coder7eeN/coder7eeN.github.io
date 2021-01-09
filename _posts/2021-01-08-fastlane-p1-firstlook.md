@@ -173,7 +173,7 @@ lane :slack_message do
 end
 ```
 
-Bình thường bạn sẽ chứa token, key ở Appfile hoặc local.properties, muốn xài được những key hoặc token này thì chỉ có cách viết câu lệnh đọc từ file ra. Ở đây, ta muốn lấy giá trị cho **ENV["SLACK_URL"]** ta phải đọc dòng dòng cuối cùng trong file local.properties và lấy giá trị sau dấu **=**. Bạn thấy cực không, mình thấy có, hãy nhìn cách `.env` giải quyết.
+Thông thường bạn sẽ chứa token, key ở Appfile hoặc local.properties, muốn xài được những key hoặc token này thì chỉ có cách viết câu lệnh đọc từ file ra. Ở đây, muốn lấy giá trị cho **ENV["SLACK_URL"]** ta phải đọc dòng dòng cuối cùng trong file local.properties và lấy giá trị sau dấu **=**. Bạn thấy cực không, mình thấy có, hãy nhìn cách `.env` giải quyết.
 
 ```ruby
 desc "Show message on Slack"
