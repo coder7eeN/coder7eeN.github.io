@@ -123,7 +123,7 @@ Cùng phân tích và đế ý chút về cú pháp ở file Fastfile
 - **default_platform(:android)** đây là 1 action giúp khai báo platform mặc định bạn sử dụng.
 - **platform :android** xác định platform để chạy là Android chứ không phải là iOS.
 
-Vậy còn **gradle(task: "test")** là gì, đó chính là action, hành động mà lane đó sẽ làm. Điển hình ở lane test, hành động của lane này là chạy test trên tất cả variants thông qua [Gradle](https://docs.fastlane.tools/actions/gradle/) action. 
+Vậy còn **gradle(task: "test")** là gì, đó chính là hành động (action) mà lane đó sẽ làm. Điển hình ở lane test, hành động của lane này là chạy test trên tất cả variants thông qua [Gradle](https://docs.fastlane.tools/actions/gradle/) action. 
 
 Bạn muốn biết nhiều hơn về actions có thể tham khảo [actions](https://docs.fastlane.tools/actions/). Tương tự, bạn muốn biết nhiều hơn về lanes và tìm thêm được nhiều cú pháp để "custom" lane theo cách bạn muốn hãy đọc thêm về [lanes](https://docs.fastlane.tools/advanced/lanes/).
 
