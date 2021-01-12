@@ -5,7 +5,7 @@ tags: [Fastlane, CD]
 comments: true
 ---
 
-Bạn là dev à nhầm là phận code nô, công việc của bạn là code, push code lên Github, build file apk đẩy lên Firebase Distribution cho tester soi bug, lâu lâu lại phải share file apk kia lên Slack cho một mục đích nào đó mà PM hoặc đồng nghiệp nhờ bạn làm :) Lúc đầu bạn thấy công việc thật thú vị nhưng làm đến lần thứ n thì bạn đã lãng phí quá nhiều thời gian để ngồi làm tay chừng đó việc. 
+Bạn là dev à nhầm là phận code nô, công việc của bạn là code, push code lên Github, build file apk đẩy lên Firebase App Distribution cho tester soi bug, lâu lâu lại phải share file apk kia lên Slack cho một mục đích nào đó mà PM hoặc đồng nghiệp nhờ bạn làm :) Lúc đầu bạn thấy công việc thật thú vị nhưng làm đến lần thứ n thì bạn đã lãng phí quá nhiều thời gian để ngồi làm tay chừng đó việc. 
 
 Vậy giải pháp là gì, đó chính là CD **(Continuous Delivery)**. Hiểu đơn giản, CD là cách giúp triển khai tất cả thay đổi về code (apk đã được build và test) đến các môi trường debug, staging hoặc tự động hóa hoàn toàn quy trình release phần mềm. Để giúp bạn tiếp cận CD đơn giản hơn, mình xin được giới thiệu Fastlane - tool giúp bạn tiết kiệm khối thời gian lãng phí kia để làm được nhiều việc hơn.
 
@@ -110,7 +110,7 @@ platform :android do
 end
 ```
 
-Có 2 khái niệm bàn cần nắm để có thể viết những đoạn script trong Fastfile đó là **lanes** và **actions**. Hiểu đơn giản, 1 file Fastfile là 1 con đường cao tốc, lanes là những làn đường nơi chứa những actions là những phương tiện giao thông.
+Có 2 khái niệm bàn cần nắm để có thể viết những đoạn script trong Fastfile đó là **lanes** và **actions**. Hiểu đơn giản, 1 file Fastfile là 1 con đường cao tốc, lanes là những làn đường nơi chứa những actions là những phương tiện giao thông, mỗi phương tiện lại có 1 công dụng khác nhau.
 
 Cùng phân tích và đế ý chút về cú pháp ở file Fastfile
 
@@ -125,7 +125,7 @@ Cùng phân tích và đế ý chút về cú pháp ở file Fastfile
 
 Vậy còn **gradle(task: "test")** là gì, đó chính là hành động (action) mà lane đó sẽ làm. Điển hình ở lane test, hành động của lane này là chạy test trên tất cả variants thông qua [Gradle](https://docs.fastlane.tools/actions/gradle/) action. 
 
-Bạn muốn biết nhiều hơn về actions có thể tham khảo [actions](https://docs.fastlane.tools/actions/). Tương tự, bạn muốn biết nhiều hơn về lanes và tìm thêm được nhiều cú pháp để "custom" lane theo cách bạn muốn hãy đọc thêm về [lanes](https://docs.fastlane.tools/advanced/lanes/).
+Còn rất nhiều actions phục vụ cho nhiều mục đích khác nhau, bạn có thể tham khảo [actions](https://docs.fastlane.tools/actions/) để khám phá thêm. Lanes cũng vậy, ghé qua [lanes](https://docs.fastlane.tools/advanced/lanes/) để tìm thêm được nhiều cú pháp giúp "custom" lane theo cách bạn muốn.
 
 ## 3. Thực hành
 
