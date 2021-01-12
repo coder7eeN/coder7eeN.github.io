@@ -335,7 +335,7 @@ Okay giờ còn 1 action cuối - Firebase App Distribution là bạn đã có t
 
 Đây là tool giúp bạn đưa file apk đến cho tester soi bug. Đầu tiên bạn cần phải tạo project Firebase thông qua website này [Firebase website](https://firebase.google.com/). Nhấn vào **Go to console** và tạo một project mới, sau đó **Add Firebase to your Android app**. Bước này bạn chỉ cần làm theo hướng dẫn của Google là có thể hoàn thành. Khi đã hoàn thành những bước trên, vào *General Setting page* kéo xuống phần *Your app* và ghi lại **AppID**, chúng ta sẽ cần nó để config Fastlane.
 
- #### 1. Firebase CLI
+#### 1. Firebase CLI
  
 Khi sử dụng Fastlane để upload file apk lên Firebase App Distribution, nó sẽ phải thông qua Firebase CLI để kết nối với server của Firebase. Tham khảo [CLI](https://firebase.google.com/docs/cli) để cài đặt hoặc update cho đúng với OS bạn đang xài.
 
