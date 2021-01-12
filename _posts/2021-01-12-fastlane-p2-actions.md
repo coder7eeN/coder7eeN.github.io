@@ -1,4 +1,9 @@
-# Fastlane and beyond (Part 2: Toys aka actions)
+---
+layout: post
+title: "Fastlane and beyond (Part 2: Toys aka actions)"
+tags: [Fastlane, CD]
+comments: true
+--- 
 
 Bài viết trước bạn đã biết được cách cấu hình Fastfile vào project của mình, cách viết lane, cách để chạy lane đó trên terminal. Ở bài viết này chúng ta sẽ chuyển sang vọc các action hay xài như Slack, Screengrab và Firebase App Distribution. Từ trải nghiệm của bản thân thì minh tin rằng sau khi bỏ những "toys" này vào project thì bạn sẽ dư thêm kha khá thời gian để làm những việc khác. Okay không lằng nhằng, bắt tay vào việc nào.
 
@@ -322,7 +327,7 @@ Kết quả thu được
   <img src="/images/blog_illustration/slack/slack_apk.png" width="60%"/>
 </p>
 
-Ở lane trên ta thấy có cú pháp **|options|** và **private_lane**, để mình giải thích chút về 2 cú pháp này. **privat_lane** đây là lane giúp bạn viết những đoạn script có thể reuse nhiều lần, lane này chỉ có thể chạy khi được gọi ở 1 lane không phải private. Còn **|options|** là cú pháp giúp bạn có thể truyền param vào câu lệnh khi chạy trên command line như ví dụ trên là *build_type:"debug"*. Để hiểu rõ hơn, tham khảo [Passing Parameters](https://docs.fastlane.tools/advanced/lanes/#passing-parameters) và [Private lanes](https://docs.fastlane.tools/advanced/lanes/#private-lanes). 
+Ở lane trên ta thấy có cú pháp |options| và **private_lane**, để mình giải thích chút về 2 cú pháp này. **privat_lane** đây là lane giúp bạn viết những đoạn script có thể reuse nhiều lần, lane này chỉ có thể chạy khi được gọi ở 1 lane không phải private. Còn |options| là cú pháp giúp bạn có thể truyền param vào câu lệnh khi chạy trên command line như ví dụ trên là *build_type:"debug"*. Để hiểu rõ hơn, tham khảo [Passing Parameters](https://docs.fastlane.tools/advanced/lanes/#passing-parameters) và [Private lanes](https://docs.fastlane.tools/advanced/lanes/#private-lanes). 
 
 Okay giờ còn 1 action cuối - Firebase App Distribution là bạn đã có thể ngồi rung đùi nhìn máy làm hết những việc mà trước kia bạn phải ngồi làm tay từng cái.
 
