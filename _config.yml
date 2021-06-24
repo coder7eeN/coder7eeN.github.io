@@ -102,6 +102,10 @@ plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-paginate
+  - jekyll-feed
+  title: coder seventeen
+  description: Welcome to my little blog
+  author: Huy Pham
 
 # Exclude these files from your production _site
 exclude:
