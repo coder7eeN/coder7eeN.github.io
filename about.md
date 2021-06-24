@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Xuất thân là con nhà làm ảnh nhưng tôi lại thích viết, thích chế cháo, bỗng một ngày biết đến lập trình, thứ có thể dung hòa cả 2. Ale hấp blog ra đời :)
 
 ### More Information
 
