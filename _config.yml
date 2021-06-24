@@ -8,6 +8,8 @@ name: coder seventeen
 # Short bio or description (displayed in the header)
 description: Android, Book & Life
 
+author: Huy Pham
+
 #
 # Flags below are optional
 #
@@ -108,3 +110,6 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+feed:
+  excerpt_only: true
