@@ -111,5 +111,6 @@ exclude:
   - README.md
   - CNAME
 
+# Hide the contant tag in rss
 feed:
   excerpt_only: true

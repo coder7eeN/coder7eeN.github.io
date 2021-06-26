@@ -4,11 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Xuất thân là con nhà làm ảnh nhưng tôi lại thích viết, thích chế cháo, bỗng một ngày biết đến lập trình, thứ có thể dung hòa cả 2. Ale hấp blog ra đời :)
+Hi! mình là Huy, hiện đang là Android dev cho 1 công ti outsource.
+
+Xuất thân là con nhà ảnh nhưng mình lại thích viết, thích chế cháo, từ ngày bản thân biết đến lập trình, thứ có thể dung hòa cả 2. Ale hấp blog ra đời - nơi mình có thể note lại những thử nghiệm và trải nghiệm của bản thân :)
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Blog này là nơi mình chia sẽ những tìm tòi của mình về Android, những cuốn sách mình đã đọc và những trải nghiệm của bản thân về thế giới quan này :)
 
 ### Contact me
 
