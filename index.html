@@ -29,8 +29,17 @@ layout: default
         </ul>
       </div>
 
-      <div class="entry meta">
-        {{ post.excerpt - {% include read-time.html content=post.content %}}}
+      <!-- <div class="entry">
+        {{ post.excerpt }}
+      </div> -->
+
+      <div>
+        <span class="entry meta">
+          {{post.excerpt - abc} klj}
+        </span>
+        <span class="meta">
+          - {% include read-time.html content=post.content %}
+        </span>
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
