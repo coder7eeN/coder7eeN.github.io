@@ -18,6 +18,10 @@ layout: default
           {{ post.date | date: "%Y-%m-%d" }}
         </span>
 
+        <span class="meta">
+          {% include read-time.html content=post.content %}
+        </span>
+
         <ul class="tag">
           {% for tag in post.tags %}
           <li>
