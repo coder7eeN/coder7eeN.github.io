@@ -30,7 +30,7 @@ layout: default
       </div>
 
       <div class="entry meta">
-        {{ post.excerpt } - {% include read-time.html content=post.content %}}
+        {{ post.excerpt - {% include read-time.html content=post.content %}}}
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
