@@ -10,10 +10,6 @@ layout: default
       {{ page.date | date: "%Y-%m-%d" }}
     </span>
 
-    <span class="meta">
-      {% include read-time.html content=content %}
-    </span>
-
     <ul class="tag">
       {% for tag in page.tags %}
       <li>
@@ -23,6 +19,10 @@ layout: default
       </li>
       {% endfor %}
     </ul>
+
+    <span class="meta">
+      - {% include read-time.html content=content %}
+    </span>
   </div>
 
   <div class="entry">
