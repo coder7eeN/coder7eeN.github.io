@@ -17,9 +17,7 @@ layout: default
         <span class="date">
           {{ post.date | date: "%Y-%m-%d" }}
         </span>
-        <span class="meta">
-          {% include read-time.html content=post.content %}
-        </span>
+
         <ul class="tag">
           {% for tag in post.tags %}
           <li>
@@ -31,8 +29,17 @@ layout: default
         </ul>
       </div>
 
-      <div class="entry">
+      <!-- <div class="entry">
         {{ post.excerpt }}
+      </div> -->
+
+      <div>
+        <span class="entry">
+          {{post.excerpt}}
+        </span>
+        <span class="meta">
+          - {% include read-time.html content=post.content %}
+        </span>
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
