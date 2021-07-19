@@ -15,7 +15,6 @@ author: Huy Pham
 #
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-# avatar: https://raw.githubusercontent.com/aweekj/kiko-now/master/images/jekyll-logo.png
 avatar: https://raw.githubusercontent.com/coder7eeN/coder7eeN.github.io/main/images/logo.png
 
 
@@ -60,7 +59,7 @@ footer-text: © 2021 Huy Pham. Powered by Jekyll & Kiko Now.
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus: coder-seventeen # <username>.disqus.com
+disqus: # <username>.disqus.com this is shit
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
