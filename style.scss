@@ -457,6 +457,14 @@ nav {
   .read-more {
     font-size: 15px;
   }
+
+  giscus, .giscus-frame {
+    width: 100%;
+  }
+  
+  .giscus-frame {
+    border: none;
+  }
 }
 
 .pagination {
@@ -595,14 +603,6 @@ footer {
       left: 0;
     }
   }
-}
-
-giscus, .giscus-frame {
-  width: 100%;
-}
-
-.giscus-frame {
-  border: none;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

@@ -17,15 +17,17 @@
 {% endif %} -->
 
 {% if site.giscus %}
-	<script src="https://giscus.app/client.js"
-        data-repo={{ giscus.repo }}
-        data-repo-id={{ giscus.repo-id }}
-        data-category={{ giscus.category }}
-        data-category-id={{ giscus.category-id }}
-        data-mapping={{ giscus.mapping }}
-        data-reactions-enabled={{ giscus.reaction-enabled }}
-        data-theme={{ giscus.theme }}
-        crossorigin={{ giscus.crossorigin }}
-        async>
-    </script>
+	<div class="comments">
+		<script src="https://giscus.app/client.js"
+			data-repo={{ giscus.repo }}
+			data-repo-id={{ giscus.repo-id }}
+			data-category={{ giscus.category }}
+			data-category-id={{ giscus.category-id }}
+			data-mapping={{ giscus.mapping }}
+			data-reactions-enabled={{ giscus.reaction-enabled }}
+			data-theme={{ giscus.theme }}
+			crossorigin={{ giscus.crossorigin }}
+			async>
+		</script>
+	</div>
 {% endif %}
