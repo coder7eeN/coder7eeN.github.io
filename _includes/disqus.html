@@ -1,4 +1,4 @@
-{% if site.disqus %}
+<!-- {% if site.disqus %}
 <div class="comments">
 	<div id="disqus_thread"></div>
 	<script type="text/javascript">
@@ -14,4 +14,21 @@
 	</script>
 	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
+{% endif %} -->
+
+{% if provider == "giscus" %}
+	{% assign giscus = site.giscus %}
+	{% if giscus.repo %}
+		<script src="https://giscus.app/client.js"
+            data-repo={{ giscus.repo }}
+            data-repo-id={{ giscus.repo-id }}
+            data-category={{ giscus.category }}
+            data-category-id={{ giscus.category-id }}
+            data-mapping={{ giscus.mapping }}
+            data-reactions-enabled={{ giscus.reaction-enabled }}
+            data-theme={{ giscus.theme }}
+            crossorigin={{ giscus.crossorigin }}
+            async>
+    	</script>
+	{% endif %}
 {% endif %}
