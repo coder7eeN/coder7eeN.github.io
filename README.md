@@ -1,61 +1,71 @@
-# Kiko Now
+# Gesko
 
-*Read this in other languages: [English](README.md), [한국어](README.ko.md).*
+Simple and minimal Jekyll blog. 
+Forked from [Asko](https://github.com/manuelmazzuola/asko).
+Inspired from [Klisé](https://github.com/piharpi/jekyll-klise)
 
-**Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
+Both had some issues with Github Pages, so I decided to make it work by losing as few features as possible.
+Now easly deployable on Github Pages, with:
 
-**Kiko Now** is a Jekyll theme based on **[Jekyll Now](https://github.com/barryclark/jekyll-now)**, following the philosophy of **Jekyll Now**, which makes it easier to create your Jekyll blog, by eliminating a lot of the up front setup.
+### Features
 
-![Kiko Now Theme Screenshot](/images/kiko-now-theme-screenshot.png "Kiko Now Theme Screenshot")
+- [x] Responsive Design
+- [x] Dark/Ligh theme 🌗
+- [x] Inline CSS
+- [x] Anchor headings
+- [x] Tags & Tag pages 
+- [x] 404 page 
+- [x] Robots.txt 🤖
+- [x] Atom & Json feeds 📡
+- [x] Sass 
+- [x] About page, with Timeline! 🗣️
+- [x] PageSpeed and w3Validator tests PASSED ✔️
+- [x] Search bar 🔎
+- [x] Next & Previous Post ⏮️ ⏭️
 
-## Quick Start
+## Backlogs
 
-### Step 1) Fork Jekyll Now to your User Repository
+- [ ] Improve SEO score on [Lighthouse](lighthouse_test.png) 
 
-Fork this repo, then rename the repository to yourgithubusername.github.io.
 
-Your Jekyll blog will often be viewable immediately at <https://yourgithubusername.github.io> (if it's not, you can often force it to build by completing step 2)
 
-### Step 2) Customize and view your site
+## Screenshot
 
-Enter your site name, description, avatar and many other options by editing the _config.yml file. You can easily turn on Google Analytics tracking, Disqus commenting and social icons here too.
+![light-theme](https://github.com/P0WEX/Gesko/blob/master/light-theme.jpg)
+![dark-theme](https://github.com/P0WEX/Gesko/blob/master/dark-theme.jpg)
 
-Making a change to _config.yml (or any file in your repository) will force GitHub Pages to rebuild your site with jekyll. Your rebuilt site will be viewable a few seconds later at <https://yourgithubusername.github.io> - if not, give it ten minutes as GitHub suggests and it'll appear soon
+## Installation
 
-There are 3 different ways that you can make changes to your blog's files:
+Run local server:
 
-1. Edit files within your new username.github.io repository in the browser at GitHub.com (shown below).
-2. Use a third party GitHub content editor, like [Prose by Development Seed](http://prose.io). It's optimized for use with Jekyll making markdown editing, writing drafts, and uploading images really easy.
-3. Clone down your repository and make updates locally, then push them to your GitHub repository.
-
-![_config.yml](/images/config.png "_config.yml")
-
-### Step 3) Publish your first blog post
-
-Edit `/_posts/2017-10-08-hello-world.md` to publish your first blog post. This [Markdown Cheatsheet](http://www.jekyllnow.com/Markdown-Style-Guide/) might come in handy.
-
-![First Post](/images/post-screenshot.png "First Post")
-
-You can add additional posts in the browser on GitHub.com too! Just hit the + icon in `/_posts/` to create new content. Just make sure to include the [front-matter](http://jekyllrb.com/docs/frontmatter/) block at the top of each new blog post and make sure the post's filename is in this format: year-month-day-title.md
-
-#### Frontmatter
-```
----
-layout: post
-title: "post title"
-tags: [tag1, tag2, tag3]
-comments: true
----
+```bash
+$ git clone https://github.com/P0WEX/Gesko.git
+$ cd Gesko
+$ bundle install
+$ bundle exec jekyll build
+$ bundle exec jekyll serve
 ```
 
-## Local Development
+Navigate to `localhost:4000`. You're Welcome, Fork and be Stargazer.
+If you want to upload it to Github Pages, remember to update the `_congif.yml` and if you are going to upload in a repo called yournickname.github.io, remember to update the `{{ site.baseurl }}` to `{{ site.url }}` .
+Note that there is also a gtag in the [`_layouts/default.html`](https://github.com/P0WEX/Gesko/blob/6776e4afc384dc3d50ce2001715929c8e70a914c/_layouts/default.html#L9), you should remove it.
 
-1. Install Jekyll and plug-ins in one fell swoop. `gem install github-pages` This mirrors the plug-ins used by GitHub Pages on your local machine including Jekyll, Sass, etc.
-2. Clone down your fork `git clone https://github.com/yourusername/yourusername.github.io.git`
-3. Serve the site and watch for markup/sass changes `jekyll serve`
-4. View your website at http://127.0.0.1:4000/
-5. Commit any changes and push everything to the master branch of your GitHub user repository. GitHub Pages will then rebuild and serve your website.
+To create new tag, create a folder in `tag/` with the name of the new one. In this folder add an `index.html` file and just add this header:
+```
+---
+layout: tag
+tag: yourNewTag
+---
+```
+Then build again and you're ready!!
 
-## Questions?
+## Contributing
 
-[Open an Issue](https://github.com/aweekj/kiko-now/issues/new) and let's chat!
+Yeaaa feel free to open a pull request.
+
+
+If you see any typos or formatting errors in a post, or want to helping reduce backlogs or any other issue that needs to be addressed, please do not hesitate to open a pull request and fix it!, please read [contributing](./CONTRIBUTING.md) before PR.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE.md).
