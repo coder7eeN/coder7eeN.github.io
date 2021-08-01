@@ -19,7 +19,7 @@ author:
 # URL settings
 url: "https://coder7een.github.io/" #
 baseurl: # leave blank if not wishd
-permalink: "https://powex.ml/Gesko/"
+permalink: 
 permalink: pretty 
 
 
@@ -51,6 +51,10 @@ plugins:
   - jekyll-sitemap
   - jekyll-relative-links
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+
+# Hide the contant tag in rss
+feed:
+  excerpt_only: true
 
 collections:
   pages:
