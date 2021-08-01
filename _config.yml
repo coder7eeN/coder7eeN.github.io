@@ -4,7 +4,7 @@ description: >-
   just a minimalist, personal blog
 googlewebfonts: Fira+Code:wght@400;500;700
 lang: en-US
-timezone: Danang
+timezone: Da Nang
 repo: # site repo [optional]
 data-theme: dark # default theme "dark" | "light"
 
@@ -17,8 +17,8 @@ author:
   email: phamnguyenanhhuy@email.com # email adress
 
 # URL settings
-url: "https://coder7een.github.io/" # url for runing server
-baseurl: "https://coder7een.github.io/" # leave blank if not wishd
+url: "https://coder7een.github.io" # url for runing server
+baseurl: "https://coder7een.github.io" # leave blank if not wishd
 permalink: # static link
 permalink: pretty 
 
