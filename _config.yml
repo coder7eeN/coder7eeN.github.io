@@ -18,7 +18,7 @@ author:
 
 # URL settings
 url: "https://coder7een.github.io/" # url for runing server
-baseurl: "coder7een.github.io" # leave blank if not wishd
+baseurl: "https://coder7een.github.io/" # leave blank if not wishd
 permalink: # static link
 permalink: pretty 
 
