@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Fastlane and beyond (Part 2: Toys aka actions)
+description: What is the difference between various font formats?
+summary: What is the difference between various font formats?
 tags: Fastlane, CD
 --- 
 
