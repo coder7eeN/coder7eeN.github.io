@@ -17,9 +17,9 @@ author:
   email: phamnguyenanhhuy@email.com # email adress
 
 # URL settings
-url: "https://coder7een.github.io/" #
-baseurl: # leave blank if not wishd
-permalink: 
+url: "https://coder7een.github.io/" # url for runing server
+baseurl: "coder7een.github.io" # leave blank if not wishd
+permalink: # static link
 permalink: pretty 
 
 
@@ -50,11 +50,6 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-relative-links
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-
-# Hide the contant tag in rss
-feed:
-  excerpt_only: true
 
 collections:
   pages:
