@@ -100,7 +100,7 @@ html[data-theme="dark"] {
 	--medium-text-color: #52057b;
 	--main-text-color: #EAEAEA;
 	--dark-text-color: rgb(36, 38, 42);
-	--link-color: rgb(255, 89, 125);
+	--link-color: rgb(244, 167, 187);
 	--code-bg-color: rgb(36, 38, 42);
 	background-color: rgb(19, 20, 24);
 
@@ -153,7 +153,8 @@ html[data-theme="dark"] {
 }
 
 body {
-	font-family: "Fira Code", monospace;
+	// font-family: "Fira Code", monospace;
+  font-family: "Niramit", sans-serif;
 	text-rendering: optimizeLegibility;
 	line-height: 1.75;
 	color: var(--main-text-color);
