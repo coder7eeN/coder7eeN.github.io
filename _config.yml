@@ -5,7 +5,7 @@ description: >-
 googlewebfonts: Hepta+Slab:wght@400;600;700
 
 lang: en-US
-timezone: Da Nang
+timezone: Ho_Chi_Minh
 repo: # site repo [optional]
 data-theme: dark # default theme "dark" | "light"
 
@@ -19,7 +19,7 @@ author:
 
 # URL settings
 url: "https://coder7een.github.io" # url for runing server
-baseurl: #"https://coder7een.github.io" # leave blank if not wishd
+baseurl: "" # leave blank if not wishd
 permalink: # static link
 permalink: pretty 
 
