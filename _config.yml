@@ -2,9 +2,7 @@ site: coder seventeen
 title: coder seventeen
 description: >-
   just a minimalist, personal blog
-googlewebfonts: Niramit:wght@400;500;700
-  # - Fira+Code:wght@400;500;700
-  # - Niramit:wght@400;500;700
+googlewebfonts: Hepta+Slab:wght@400;600;700
 
 lang: en-US
 timezone: Da Nang
