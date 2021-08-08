@@ -2,7 +2,7 @@ site: coder seventeen
 title: coder seventeen
 description: >-
   just a minimalist, personal blog
-googlewebfonts: Be+Vietnam:wght@400 #more size: wght@300;500;700
+googlewebfonts: Be+Vietnam:wght@300 #more size: wght@300;500;700
 
 lang: en-US
 timezone: Ho_Chi_Minh
