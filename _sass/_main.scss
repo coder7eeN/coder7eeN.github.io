@@ -154,7 +154,7 @@ html[data-theme="dark"] {
 
 body {
 	// font-family: "Fira Code", monospace;
-  font-family: "Be Vietnam", sans-serif;
+  font-family: "Trispace", sans-serif;
 	text-rendering: optimizeLegibility;
 	line-height: 1.75;
 	color: var(--main-text-color);
@@ -370,6 +370,7 @@ main {
     align-items: center;
     display: flex;
     justify-content: space-between;
+    font-size: 14px;
   }
 }
 
