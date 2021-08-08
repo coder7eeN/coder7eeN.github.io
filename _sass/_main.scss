@@ -9,7 +9,7 @@
 }
 
 html {
-	font-size: 16px;
+	font-size: 17px;
 }
 
 #theme-toggle {
@@ -154,7 +154,7 @@ html[data-theme="dark"] {
 
 body {
 	// font-family: "Fira Code", monospace;
-  font-family: "Hepta Slab", serif;
+  font-family: "Be Vietnam", sans-serif;
 	text-rendering: optimizeLegibility;
 	line-height: 1.75;
 	color: var(--main-text-color);
@@ -348,7 +348,7 @@ main {
 }
 
 .social-footer {
-  padding: 1rem;
+  padding: 6rem;
   display: flex;
   justify-content: center;
   position: initial;
@@ -364,6 +364,12 @@ main {
         transition: color 0.3s ease-in;
       }
     }
+  }
+
+  .footer-signature{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
