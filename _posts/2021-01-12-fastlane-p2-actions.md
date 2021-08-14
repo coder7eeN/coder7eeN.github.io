@@ -3,7 +3,7 @@ layout: post
 title: Fastlane and beyonds (Phần 2)
 description: Fastlane and beyonds (Phần 2) abc
 summary: Fastlane and beyonds (Phần 2) abc xyz
-tags: Fastlane, CD
+tags: Fastlane CD
 --- 
 
 Bài viết trước bạn đã biết được cách cấu hình Fastfile vào project của mình, cách viết lane, cách để chạy lane đó trên terminal. Ở bài viết này chúng ta sẽ chuyển sang vọc các action hay xài như Slack, Screengrab và Firebase App Distribution. Từ trải nghiệm của bản thân thì minh tin rằng sau khi bỏ những "toys" này vào project thì bạn sẽ dư thêm kha khá thời gian để làm những việc khác. Okay không lằng nhằng, bắt tay vào việc nào.
