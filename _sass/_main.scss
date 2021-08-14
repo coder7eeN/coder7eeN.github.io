@@ -179,6 +179,7 @@ pre {
 	background: var(--code-bg-color);
 	margin: 0 -27px;
 	border-width: 1px;
+  word-break: break-word;
 }
 
 code {
@@ -349,15 +350,17 @@ main {
 
 .social-footer {
   padding: 6rem;
-  display: flex;
+  display: block;
   justify-content: center;
   position: initial;
+  text-align: center;
 
   .social-footer-icons {
      
     .fa {
       font-size: 1.3rem;
       color: #a9a9a9;
+      margin: 3px;
 
       &:hover {
         color: darken(#a9a9a9, 25%);
@@ -368,9 +371,9 @@ main {
 
   .footer-signature{
     align-items: center;
-    display: flex;
+    display: block;
     justify-content: space-between;
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
