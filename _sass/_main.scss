@@ -763,12 +763,8 @@ $link-color: var(--link-color);
   }
 }
 
-giscus, .giscus-frame {
+.giscus, .giscus-frame {
   width: 100%;
-}
-
-.giscus-frame {
-  border: none;
 
   .btn-primary {
     background-color: red;
@@ -776,5 +772,9 @@ giscus, .giscus-frame {
     box-shadow: var(--color-btn-primary-shadow),var(--color-btn-primary-inset-shadow);
     color: var(--color-text-primary);
   }
-  
+
+}
+
+.giscus-frame {
+  border: none;
 }
