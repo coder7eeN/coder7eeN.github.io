@@ -12,13 +12,12 @@
 		data-mapping={{ giscus.mapping }}
 		data-reactions-enabled={{ giscus.reaction-enabled }}
 		crossorigin={{ giscus.crossorigin }}
-        id="change"
 		async>
 	</script>
 
 
 
-<script>
+<!-- <script>
     var abc = localStorage.getItem('theme');
     abc = abc || (window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light' : 'light');
 
@@ -32,5 +31,5 @@
     
     document.getElementById("change").setAttribute("data-theme", abc)
 
-</script>
+</script> -->
 {% endif %}
