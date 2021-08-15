@@ -762,3 +762,18 @@ $link-color: var(--link-color);
     
   }
 }
+
+.btn-primary {
+  background-color: var(--color-btn-primary-bg);
+  border-color: var(--color-btn-primary-border);
+  box-shadow: var(--color-btn-primary-shadow),var(--color-btn-primary-inset-shadow);
+  color: var(--color-text-primary);
+}
+
+giscus, .giscus-frame {
+  width: 100%;
+}
+
+.giscus-frame {
+  border: none;
+}

@@ -93,5 +93,5 @@ giscus:
   category-id: "DIC_kwDOE3ae984B-YOl"
   mapping: "title"
   reaction-enabled: "1"
-  theme: "dark"
+  theme: "transparent_dark"
   crossorigin: "anonymous"
