@@ -1,7 +1,7 @@
 site: coder seventeen
 title: coder seventeen
 description: >-
-  just a minimalist, personal blog
+  Huy's blog
 googlewebfonts: Be+Vietnam:wght@300 #more size: wght@300;500;700
 
 lang: en-US
@@ -11,7 +11,7 @@ data-theme: dark # default theme "dark" | "light"
 
 author:
   name: Huy Pham
-  bio: just a minimalist, personal blog
+  bio: just a minimalist blog
   username: Huy Pham # general username
   github:  coder7eeN# github username
   twitter: # twitter username
