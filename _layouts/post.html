@@ -35,41 +35,7 @@ layout: default
 
   </nav>
 
-
-
-  {% if site.giscus %}
-	{% assign giscus = site.giscus %}
-
-	<script src="https://giscus.app/client.js"
-		data-repo={{ giscus.repo }}
-		data-repo-id={{ giscus.repo-id }}
-		data-category={{ giscus.category }}
-		data-category-id={{ giscus.category-id }}
-		data-mapping={{ giscus.mapping }}
-		data-reactions-enabled={{ giscus.reaction-enabled }}
-    data-theme="dark"
-		crossorigin={{ giscus.crossorigin }}
-		async>
-	</script>
-
-
-
-<script>
-    var abc = localStorage.getItem('theme');
-    abc = abc || (window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light' : 'light');
-
-    // function changTheme() {
-    // if (theme === "dark") {
-    //     return "dark"
-    // } else {
-    //     return "light"
-    // }
-    // }
-    
-    document.getElementById("change").setAttribute("data-theme", abc)
-
-</script>
-{% endif %}
+  {% include giscus.html %}
 
 
 </section>
