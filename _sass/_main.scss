@@ -765,16 +765,16 @@ $link-color: var(--link-color);
 
 giscus, .giscus-frame {
   width: 100%;
-
-  .btn-primary {
-    background-color: var(--color-btn-primary-bg);
-    border-color: var(--color-btn-primary-border);
-    box-shadow: var(--color-btn-primary-shadow),var(--color-btn-primary-inset-shadow);
-    color: var(--color-text-primary);
-  }
-
 }
 
 .giscus-frame {
   border: none;
+
+  .btn-primary {
+    background-color: red;
+    border-color: var(--color-btn-primary-border);
+    box-shadow: var(--color-btn-primary-shadow),var(--color-btn-primary-inset-shadow);
+    color: var(--color-text-primary);
+  }
+  
 }
