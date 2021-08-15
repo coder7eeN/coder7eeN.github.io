@@ -238,7 +238,7 @@ section {
 }
 
 section {
-	margin-top: 2rem;
+	margin-top: 5.5rem;
 }
 
 blockquote {
@@ -347,17 +347,17 @@ main {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+
+  .blog-name{
+    display: flex;
+  }
+
+  .logo-17 {
+    margin-left: 10px;
+    width: 31px;
+    height: 31px;
+  }
 }
-
-// .blog-name{
-//   display: flex;
-// }
-
-// .logo-17 {
-//   margin-left: 10px;
-//   width: 31px;
-//   height: 31px;
-// }
 
 .social-footer {
   padding: 2rem;
