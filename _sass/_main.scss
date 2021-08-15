@@ -238,7 +238,7 @@ section {
 }
 
 section {
-	margin-top: 5.5rem;
+	margin-top: 2rem;
 }
 
 blockquote {
@@ -347,6 +347,16 @@ main {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+
+  .blog-name{
+    display: flex;
+  }
+
+  .logo-17 {
+    margin-left: 10px;
+    width: 31px;
+    height: 31px;
+  }
 }
 
 .social-footer {
@@ -765,14 +775,7 @@ $link-color: var(--link-color);
 
 .giscus, .giscus-frame {
   width: 100%;
-
-  .btn-primary {
-    background-color: red;
-    border-color: var(--color-btn-primary-border);
-    box-shadow: var(--color-btn-primary-shadow),var(--color-btn-primary-inset-shadow);
-    color: var(--color-text-primary);
-  }
-
+  margin-top: 3rem;
 }
 
 .giscus-frame {
