@@ -19,8 +19,8 @@
 
 
 <script>
-    var theme = localStorage.getItem('theme');
-    theme = theme || (window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light' : 'light');
+    var abc = localStorage.getItem('theme');
+    abc = abc || (window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light' : 'light');
 
     // function changTheme() {
     // if (theme === "dark") {
@@ -30,7 +30,7 @@
     // }
     // }
     
-    document.getElementById("change").setAttribute("data-theme", theme)
+    document.getElementById("change").setAttribute("data-theme", abc)
 
 </script>
 {% endif %}
