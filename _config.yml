@@ -82,3 +82,16 @@ defaults:
 relative_links:
   enabled:     true
   collections: false
+
+# You must install giscus github app before use.(https://github.com/apps/giscus)
+# Make sure all variables are set properly. Check below link for detail.
+# https://giscus.vercel.app/
+giscus:
+  repo: "coder7eeN/coder7eeN.github.io"
+  repo-id: "MDEwOlJlcG9zaXRvcnkzMjY1NDEwNDc="
+  category: "Comments"
+  category-id: "DIC_kwDOE3ae984B-YOl"
+  mapping: "pathname"
+  reaction-enabled: "1"
+  theme: "light"
+  crossorigin: "anonymous"
