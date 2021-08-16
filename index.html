@@ -52,7 +52,7 @@ layout: default
                 #{{ tag }}</p>{% unless forloop.last %}, {% endunless %}
                 {% endfor %}
             </span>
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+            <time class="tag-home-time" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
         </li>
         {% endfor %}
     </ul>
