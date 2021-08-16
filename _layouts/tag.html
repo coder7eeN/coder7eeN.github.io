@@ -21,9 +21,10 @@ layout: default
 
 <section class="tags">
   <h2>All tags:</h2>
-  {% assign tags = site.tags | sort %}
-  {% for tag in tags %}
+
   <ul>
+    {% assign tags = site.tags | sort %}
+    {% for tag in tags %}
     <li>
       <a class="posts" href=" {{ site.url }}/tag/{{ tag | first | slugify }}/">{{ tag[0] | replace:'-', ' '
         }} ({{ tag | last | size
