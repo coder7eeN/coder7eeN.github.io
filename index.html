@@ -51,9 +51,8 @@ layout: default
         <li>
             <span class="meta">
                 {% for tag in page.tags %}
-                <p>#{{ tag }}</p>{% unless forloop.last %}, {% endunless %}
-                {% endfor %}
-            </span>
+                <a href="{{ site.url }}/tag/{{tag}}">{{tag}}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
+
             <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
         </li>
         
