@@ -350,6 +350,7 @@ main {
 
   .blog-name{
     display: flex;
+    margin-top: -3px;
   }
 
   .logo-17 {
@@ -776,7 +777,7 @@ $link-color: var(--link-color);
 
 .giscus, .giscus-frame {
   width: 100%;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .giscus-frame {
