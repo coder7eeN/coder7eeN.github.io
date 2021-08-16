@@ -321,6 +321,11 @@ header ul {
 .tag-home {
   margin-top: -1rem;
   color: var(--main-text-color);
+
+  .tag-home-detail {
+    display: flex;
+    margin-left: 0.4rem;
+  }
 }
 
 time {
