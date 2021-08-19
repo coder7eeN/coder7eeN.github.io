@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fastlane and beyond (Part 1: First look)
+title: "Fastlane and beyond (Part 1: First look)"
 description: Fastlane là gì?
 summary: Fastlane là gì?
 tags: fastlane cd
