@@ -3,7 +3,7 @@ layout: post
 title: "Fastlane and beyond (Phần 1: First look)"
 description: Fastlane là gì?
 summary: Fastlane là gì?
-tags: fastlane, cd
+tags: fastlane cd
 ---
 
 Bạn là dev à nhầm là phận code nô, công việc của bạn là code, push code lên Github, build file apk đẩy lên Firebase App Distribution cho tester soi bug, lâu lâu lại phải share file apk kia lên Slack cho một mục đích nào đó mà PM hoặc đồng nghiệp nhờ bạn làm :) Lúc đầu bạn thấy công việc thật thú vị nhưng làm đến lần thứ n thì bạn đã lãng phí quá nhiều thời gian để ngồi làm tay chừng đó việc. 
