@@ -39,9 +39,11 @@ layout: compress
       }
     }
 
-    let theme = localStorage.getItem('theme');
+    // let theme = localStorage.getItem('theme');
 
-    theme = theme || (window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'dark' : 'dark');
+    // theme = theme || (window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'dark' : 'dark');
+
+    let theme = 'dark'
 
     setTheme(theme);
 
