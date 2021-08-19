@@ -85,7 +85,6 @@ Bạn sẽ thấy folder fastlane có 2 files là Appfile và Fastfile.
 - **Appfile**: nơi bạn có thể chứa key của app, token của Firebase, những thứ sẽ liên quan đến việc build app. Nhưng vẫn có 1 nơi khác để lưu trữ token và key ngon, xịn, mịn hơn, mình sẽ đề cập ở đoạn sau.
 - **Fastfile**: nơi để viết những đoạn script cấu hình. Sử dụng ngôn ngữ Ruby để viết nhưng bạn không cần phải quá lo, chỉ cẩn nắm những cú pháp cơ bản là có thể cấu hình được lane, ghé qua [Fastlane Document](https://docs.fastlane.tools/) để hiểu rõ hơn.
 
-
 ```ruby
 default_platform(:android)
 
