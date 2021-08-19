@@ -46,7 +46,7 @@ fastlane 2.171.0
 
 Giờ thì chúng ta có thể thêm Fastlane vào project rồi.
 
-#### 2.1 Khởi tạo Fastlane 
+#### 1. Khởi tạo Fastlane 
 
 Đầu tiên, bạn hãy tạo một project Android mới, tham khảo view tại [project](https://github.com/coder7eeN/fastlane_and_beyond/tree/main/app/src/main) mẫu này. 
 
@@ -78,7 +78,7 @@ bundle exec fastlane test
 
 Nếu thấy được thông báo `fastlane.tools finished successfully 🎉` thì chúc mừng bạn, cuộc vui đã bắt đầu.
 
-#### 2.2 Fastfile
+#### 2. Fastfile
 
 Bạn sẽ thấy folder fastlane có 2 files là Appfile và Fastfile.
 
