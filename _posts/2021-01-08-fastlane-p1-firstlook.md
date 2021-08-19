@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Fastlane and beyond (Part 1: First look)"
+title: "Fastlane and beyond (Phần 1: First look)"
 description: Fastlane là gì?
 summary: Fastlane là gì?
-tags: fastlane cd
+tags: fastlane, cd
 ---
 
 Bạn là dev à nhầm là phận code nô, công việc của bạn là code, push code lên Github, build file apk đẩy lên Firebase App Distribution cho tester soi bug, lâu lâu lại phải share file apk kia lên Slack cho một mục đích nào đó mà PM hoặc đồng nghiệp nhờ bạn làm :) Lúc đầu bạn thấy công việc thật thú vị nhưng làm đến lần thứ n thì bạn đã lãng phí quá nhiều thời gian để ngồi làm tay chừng đó việc. 
@@ -85,7 +85,6 @@ Bạn sẽ thấy folder fastlane có 2 files là Appfile và Fastfile.
 - **Appfile**: nơi bạn có thể chứa key của app, token của Firebase, những thứ sẽ liên quan đến việc build app. Nhưng vẫn có 1 nơi khác để lưu trữ token và key ngon, xịn, mịn hơn, mình sẽ đề cập ở đoạn sau.
 - **Fastfile**: nơi để viết những đoạn script cấu hình. Sử dụng ngôn ngữ Ruby để viết nhưng bạn không cần phải quá lo, chỉ cẩn nắm những cú pháp cơ bản là có thể cấu hình được lane, ghé qua [Fastlane Document](https://docs.fastlane.tools/) để hiểu rõ hơn.
 
-
 ```ruby
 default_platform(:android)
 
@@ -116,12 +115,7 @@ Có 2 khái niệm bàn cần nắm để có thể viết những đoạn scrip
 
 Cùng phân tích và đế ý chút về cú pháp ở file Fastfile
 
-- **decs** + **mô tả** đây là phương thức dùng để làm những việc sau
-	
-	- Mô tả lane phía dưới để làm gì.
-	- Khi chạy Fastlane nó sẽ báo đang chạy đến đoạn nào.
-	- Ghi lại log trong file README sau khi chạy Fastlane.
-
+- **decs** + **mô tả** đây là phương thức dùng để làm những việc như: mô tả lane phía dưới để làm gì; khi chạy Fastlane nó sẽ báo đang chạy đến đoạn nào; ghi lại log trong file README sau khi chạy Fastlane.
 - **do**, **end** tương đương với **{}**.
 - **lane** bắt đầu bằng keyword `lane` tiếp theo là tên mà bạn muốn đặt cho lane đó, ví dụ `:test`.
 - **default_platform(:android)** đây là 1 action giúp khai báo platform mặc định bạn sử dụng.
