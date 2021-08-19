@@ -215,7 +215,7 @@ Với Slack action ta sẽ làm 2 việc đó là gửi tin nhắn và gửi fil
 
 Ta sẽ sử dụng Webhook để gửi tin nhắn lên Slack. Bản chất của Webhook là Slack URL cho phép gửi mọi thứ real-time lên channel của Slack hoặc đến 1 người cụ thể. Để config Webhook ta làm theo hướng dẫn tại [incoming webhook app](https://api.slack.com/messaging/webhooks).
 
-Copy URL vừa được tạo ra, paste nó vào file `.env`. Nếu bạn chưa biết file `.env` để làm gì thì hãy đọc lại [Part 1](https://coder7een.github.io/fastlane-p1-firstlook/) nhé. 
+Copy URL vừa được tạo ra, paste nó vào file `.env`. Nếu bạn chưa biết file `.env` để làm gì thì hãy đọc lại [Phần 1](https://coder7een.github.io/2021/01/08/fastlane-p1-firstlook) nhé. 
 
 ```ruby
 # Add SLACK_URL NOTIFICATION
