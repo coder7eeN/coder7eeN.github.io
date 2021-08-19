@@ -46,7 +46,7 @@ fastlane 2.171.0
 
 Giờ thì chúng ta có thể thêm Fastlane vào project rồi.
 
-#### 1. Khởi tạo Fastlane 
+#### 2.1 Khởi tạo Fastlane 
 
 Đầu tiên, bạn hãy tạo một project Android mới, tham khảo view tại [project](https://github.com/coder7eeN/fastlane_and_beyond/tree/main/app/src/main) mẫu này. 
 
@@ -78,12 +78,13 @@ bundle exec fastlane test
 
 Nếu thấy được thông báo `fastlane.tools finished successfully 🎉` thì chúc mừng bạn, cuộc vui đã bắt đầu.
 
-#### 2. Fastfile
+#### 2.2 Fastfile
 
 Bạn sẽ thấy folder fastlane có 2 files là Appfile và Fastfile.
 
 - **Appfile**: nơi bạn có thể chứa key của app, token của Firebase, những thứ sẽ liên quan đến việc build app. Nhưng vẫn có 1 nơi khác để lưu trữ token và key ngon, xịn, mịn hơn, mình sẽ đề cập ở đoạn sau.
 - **Fastfile**: nơi để viết những đoạn script cấu hình. Sử dụng ngôn ngữ Ruby để viết nhưng bạn không cần phải quá lo, chỉ cẩn nắm những cú pháp cơ bản là có thể cấu hình được lane, ghé qua [Fastlane Document](https://docs.fastlane.tools/) để hiểu rõ hơn.
+
 
 ```ruby
 default_platform(:android)
@@ -116,9 +117,11 @@ Có 2 khái niệm bàn cần nắm để có thể viết những đoạn scrip
 Cùng phân tích và đế ý chút về cú pháp ở file Fastfile
 
 - **decs** + **mô tả** đây là phương thức dùng để làm những việc sau
+	
 	- Mô tả lane phía dưới để làm gì.
 	- Khi chạy Fastlane nó sẽ báo đang chạy đến đoạn nào.
 	- Ghi lại log trong file README sau khi chạy Fastlane.
+
 - **do**, **end** tương đương với **{}**.
 - **lane** bắt đầu bằng keyword `lane` tiếp theo là tên mà bạn muốn đặt cho lane đó, ví dụ `:test`.
 - **default_platform(:android)** đây là 1 action giúp khai báo platform mặc định bạn sử dụng.
