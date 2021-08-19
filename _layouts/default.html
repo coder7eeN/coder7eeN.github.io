@@ -41,7 +41,7 @@ layout: compress
 
     let theme = localStorage.getItem('theme');
 
-    theme = theme || (window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light' : 'dark');
+    theme = theme || (window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)').matches ? 'light' : 'light' : 'dark');
 
     setTheme(theme);
 
