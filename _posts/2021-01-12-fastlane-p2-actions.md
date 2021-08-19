@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Fastlane and beyonds (Phần 2)
-description: Fastlane and beyonds (Phần 2) abc
-summary: Fastlane and beyonds (Phần 2) abc xyz
+title: Fastlane and beyond (Part 2: Toys aka actions)
+description: Làm sao để sử dụng các action trong fastlane
+summary: Làm sao để sử dụng các action trong fastlane
 tags: fastlane cd
 --- 
 
@@ -12,7 +12,7 @@ Bài viết trước bạn đã biết được cách cấu hình Fastfile vào 
 
 Chúng ta cùng khởi động bằng [screengrab](https://docs.fastlane.tools/actions/screengrab/), đây là action giúp bạn có thể chụp ảnh màn hình tự động cho nhiều loại thiết bị và ngôn ngữ khác nhau. Một action khá tiện lợi cho những ai muốn đăng ảnh app lên store mà không muốn tốn quá nhiều thời gian ngồi chụp màn hình bằng tay.
 
-#### 1. Cài đặt
+#### 1.1 Cài đặt
 
 Để cài đặt, chúng ta sử dụng dòng lệnh
 
@@ -20,7 +20,7 @@ Chúng ta cùng khởi động bằng [screengrab](https://docs.fastlane.tools/a
 sudo gem install screengrab
 ```
 
-Tiếp theo, thêm những permission sau vào **AndroidManifest**
+Thêm những permission sau vào **AndroidManifest**
 
 ```xml
 <!-- Allows unlocking your device and activating its screen so UI tests can succeed -->
@@ -35,7 +35,7 @@ Tiếp theo, thêm những permission sau vào **AndroidManifest**
 <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
 ```
 
-Muốn chạy được nó thì bạn cần phải viết 1 file test để chạy tự động thông qua **Instrumentation Testing**. Mở file **app/build.gradle** thêm config này vào phần dependencies
+Muốn chạy được nó thì bạn cần phải viết 1 file test để chạy tự động thông qua **Instrumentation Testing**. Thêm config này vào phần dependencies trong **app/build.gradle**
 
 ```bash
 androidTestImplementation 'tools.fastlane:screengrab:2.0.0'
@@ -43,7 +43,7 @@ androidTestImplementation 'tools.fastlane:screengrab:2.0.0'
 
 Phần cài đặt đã xong, giờ ta sẽ chuyển qua phần test.
 
-#### 2. Instrumentation Tests
+#### 1.2 Instrumentation Tests
 
 Mở **app/src/androidTest**, ta sẽ thấy được phần instrumentation tests. Tạo 1 file instrumentation test mới, đặt tên cho file này là **ExampleInstrumentedTest**, nếu trong project đã có file này thì chúng ta chỉ cần viết thêm vào.
 
@@ -73,7 +73,7 @@ class ExampleInstrumentedTest {
     @Rule
     @JvmField
     val localeTestRule = LocaleTestRule()
-
+    
     @get:Rule
     val activityRule = ActivityTestRule(MainActivity::class.java, false, false)
 
@@ -115,7 +115,7 @@ Sau khi tiến trình chạy xong thì ta sẽ có được 2 folders chứa apk
 
 Khâu chuẩn bị đã hoàn tất, giờ chúng ta sẽ chụp màn hình tự động thông qua fastlane.
 
-#### 3. Screenshot
+#### 1.3 Screenshot
 
 Khởi tạo Screengrabfile, đây là file lưu toàn bộ config cho screengrab
 
@@ -211,7 +211,7 @@ Okay, vậy là xong action đầu tiên. Tiếp theo chúng ta cùng đến v�
 
 Với Slack action ta sẽ làm 2 việc đó là gửi tin nhắn và gửi file apk.
 
-#### 1. Slack message
+#### 2.1 Slack message
 
 Ta sẽ sử dụng Webhook để gửi tin nhắn lên Slack. Bản chất của Webhook là Slack URL cho phép gửi mọi thứ real-time lên channel của Slack hoặc đến 1 người cụ thể. Để config Webhook ta làm theo hướng dẫn tại [incoming webhook app](https://api.slack.com/messaging/webhooks).
 
@@ -249,7 +249,7 @@ Kết quả thu được
 
 Lane này sẽ thực hiện 2 actions, đầu tiên là gradle action, nó sẽ clean toàn bộ phần thư mục build sau đó thực hiện việc build cho variant debug. Tiếp theo là slack action, nó thực hiện việc hiển thị message ta muốn lên channel Slack đã được gán trước thông qua SLACK_URL.
 
-#### 2. Slack file
+#### 2.2 Slack file
 
 Tuy nhiên, muốn share file apk lên Slack thì ta phải tạo một *app* trên Slack. Sử dụng link [https://api.slack.com/apps](https://api.slack.com/apps) này để tạo *app*.
 
@@ -336,7 +336,7 @@ Okay giờ còn 1 action cuối - Firebase App Distribution là bạn đã có t
 
 Đây là tool giúp bạn đưa file apk đến cho tester soi bug. Đầu tiên bạn cần phải tạo project Firebase thông qua website này [Firebase website](https://firebase.google.com/). Nhấn vào **Go to console** và tạo một project mới, sau đó **Add Firebase to your Android app**. Bước này bạn chỉ cần làm theo hướng dẫn của Google là có thể hoàn thành. Khi đã hoàn thành những bước trên, vào *General Setting page* kéo xuống phần *Your app* và ghi lại **AppID**, chúng ta sẽ cần nó để config Fastlane.
 
-#### 1. Firebase CLI
+#### 3.1 Firebase CLI
  
 Khi sử dụng Fastlane để upload file apk lên Firebase App Distribution, nó sẽ phải thông qua Firebase CLI để kết nối với server của Firebase. Tham khảo [CLI](https://firebase.google.com/docs/cli) để cài đặt hoặc update cho đúng với OS bạn đang xài.
 
@@ -346,7 +346,7 @@ Sau khi cài đặt xong, chạy lệnh sau để đăng nhập vào tài khoả
 firebase login
 ```
 
-#### 2. Firebase App Distribution Plugin
+#### 3.2 Firebase App Distribution Plugin
 
 Chạy đoạn lệnh sau để cài đặt 
 
@@ -360,7 +360,7 @@ Bạn sẽ thấy được thông báo như sau
   <img src="/images/blog_illustration/slack/firebase_plugin.png" width="70%"/>
 </p>
 
-Nhấn `y` để hoàn tất cài đặt.
+Nhấn **y** để hoàn tất cài đặt.
 
 Tiếp theo, bạn hãy set group như trong hình
 
@@ -374,7 +374,7 @@ Bạn còn nhớ AppID lúc nãy chứ, hãy dán nó vào file `.env` như sau
 FIREBASE_APP_ID_ANDROID="1:123456789:android:abcd1234"
 ```
 
-#### 3. Deploy
+#### 3.3 Deploy
 
 Chúng ta sẽ viết lane để deploy file apk cho variant debug lên cho những tester ở group vừa set phía trên 
 
