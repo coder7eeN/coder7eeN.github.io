@@ -285,6 +285,8 @@ SLACK_URL="https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXX
 ACCESS_TOKEN="xoxp-1482..."
 ```
 
+Lane: 
+
 ```ruby
 desc "Build a Debug APK & deploy to slack"
 lane :slack_apk_build do |options|
@@ -387,8 +389,8 @@ lane :distribute do
     app: ENV['FIREBASE_APP_ID_ANDROID'],
     groups: "group_1",
     release_notes: Fastlane Release note Debug env
-   )
- end
+  )
+end
 ```
 
 Chạy lane nào

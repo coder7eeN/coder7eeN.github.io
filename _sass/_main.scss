@@ -179,7 +179,8 @@ pre {
 	background: var(--code-bg-color);
 	margin: 0 -27px;
 	border-width: 1px;
-  word-break: break-word;
+  // word-break: break-word;
+  overflow: auto;
   font-size: 14px;
 }
 
