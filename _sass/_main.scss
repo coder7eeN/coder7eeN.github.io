@@ -574,11 +574,11 @@ $link-color: var(--link-color);
   &:before {
     position: absolute;
     left: 50%;
-    top: 0;
+    top: auto;
     content: ' ';
     display: block;
     width: 2px;
-    height: 90%;
+    height: 63%;
     margin-left: -3px;
     background: var(--light-text-color);
     z-index: 5;
