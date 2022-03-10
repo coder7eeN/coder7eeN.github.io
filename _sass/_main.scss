@@ -793,7 +793,7 @@ $link-color: var(--link-color);
 
 .giscus, .giscus-frame {
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .giscus-frame {
@@ -809,7 +809,8 @@ $link-color: var(--link-color);
 }
 
 .share-heading {
-  margin-top: 0px;
+  margin-top: 50px;
+  text-align: center;
 }
 
 /* Title */
@@ -820,14 +821,7 @@ $link-color: var(--link-color);
 
 /* All buttons */
 .share-buttons {
-}
-
-.horizontal-share-buttons {
-  border: 1px solid #928b8b;
-  border-radius: 0.2em;
-  padding: 0.2em;
-  margin-right: 0.2em;
-  line-height: 2em;
+  text-align: center;
 }
 
 /* Each button */
@@ -835,7 +829,6 @@ $link-color: var(--link-color);
   margin: 0px;
   margin-bottom: 10px;
   margin-right: 3px;
-  // border: 1px solid #D3D6D2;
   padding: 5px 10px 5px 10px;
 }
 .share-button:hover {
