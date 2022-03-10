@@ -834,7 +834,7 @@ $link-color: var(--link-color);
 }
 .share-button:hover {
   opacity: 1;
-  color: #ffffff;
+  color: var(--icon-share-hover-color);
 }
 
 /* Facebook button */
