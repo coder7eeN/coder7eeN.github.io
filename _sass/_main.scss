@@ -802,8 +802,8 @@ $link-color: var(--link-color);
 
 #share-bar {
   font-size: 20px;
-  border: 3px solid #7de77b;
-  border-radius: 0.3em;
+  // border: 3px solid #7de77b;
+  // border-radius: 0.3em;
   padding: 0.3em;
   background: rgba(125,231,123,.21)
 }
@@ -835,7 +835,7 @@ $link-color: var(--link-color);
   margin: 0px;
   margin-bottom: 10px;
   margin-right: 3px;
-  border: 1px solid #D3D6D2;
+  // border: 1px solid #D3D6D2;
   padding: 5px 10px 5px 10px;
 }
 .share-button:hover {
@@ -847,7 +847,6 @@ $link-color: var(--link-color);
 .icon-facebook2 {
   color: #3b5998;
 }
-
 .icon-facebook2:hover {
   background-color: #3b5998;
   color: white;
@@ -867,16 +866,6 @@ $link-color: var(--link-color);
   color: #ff4500;
 }
 .icon-reddit:hover {
-  background-color: #ff4500;
-  color: white;
-}
-
-/* Hackernews button */
-.icon-hackernews {
-  color: #ff4500;
-}
-
-.icon-hackernews:hover {
   background-color: #ff4500;
   color: white;
 }
