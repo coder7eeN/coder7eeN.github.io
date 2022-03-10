@@ -43,7 +43,7 @@ html[data-theme="light"] {
 	--code-bg-color: rgb(245, 245, 245);
 
 	background-color: rgb(255, 255, 255);
-
+  --icon-share-hover-color: #6e6c6c;
 	
 
 	#theme-toggle div {
@@ -103,6 +103,7 @@ html[data-theme="dark"] {
 	--link-color: rgb(244, 167, 187);
 	--code-bg-color: rgb(36, 38, 42);
 	background-color: rgb(19, 20, 24);
+  --icon-share-hover-color: #fff;
 
 	#theme-toggle div {
 		position: relative;
@@ -842,7 +843,7 @@ $link-color: var(--link-color);
 }
 .icon-facebook2:hover {
   background-color: #3b5998;
-  color: white;
+  color: var(--icon-share-hover-color);
 }
 
 /* Twitter button */
@@ -851,7 +852,7 @@ $link-color: var(--link-color);
 }
 .icon-twitter:hover {
   background-color: #55acee;
-  color: white;
+  color: var(--icon-share-hover-color);
 }
 
 /* Reddit button */
@@ -860,7 +861,7 @@ $link-color: var(--link-color);
 }
 .icon-reddit:hover {
   background-color: #ff4500;
-  color: white;
+  color: var(--icon-share-hover-color);
 }
 
 /* LinkedIn button */
@@ -869,5 +870,5 @@ $link-color: var(--link-color);
 }
 .icon-linkedin:hover {
   background-color: #007bb5;
-  color: white;
+  color: var(--icon-share-hover-color);
 }
