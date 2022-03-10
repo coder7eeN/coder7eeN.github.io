@@ -799,3 +799,93 @@ $link-color: var(--link-color);
 .giscus-frame {
   border: none;
 }
+
+#share-bar {
+  font-size: 20px;
+  border: 3px solid #7de77b;
+  border-radius: 0.3em;
+  padding: 0.3em;
+  background: rgba(125,231,123,.21)
+}
+
+.share-heading {
+  margin-top: 0px;
+}
+
+/* Title */
+#share-bar h4 {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* All buttons */
+.share-buttons {
+}
+
+.horizontal-share-buttons {
+  border: 1px solid #928b8b;
+  border-radius: 0.2em;
+  padding: 0.2em;
+  margin-right: 0.2em;
+  line-height: 2em;
+}
+
+/* Each button */
+.share-button {
+  margin: 0px;
+  margin-bottom: 10px;
+  margin-right: 3px;
+  border: 1px solid #D3D6D2;
+  padding: 5px 10px 5px 10px;
+}
+.share-button:hover {
+  opacity: 1;
+  color: #ffffff;
+}
+
+/* Facebook button */
+.icon-facebook2 {
+  color: #3b5998;
+}
+
+.icon-facebook2:hover {
+  background-color: #3b5998;
+  color: white;
+}
+
+/* Twitter button */
+.icon-twitter {
+  color: #55acee;
+}
+.icon-twitter:hover {
+  background-color: #55acee;
+  color: white;
+}
+
+/* Reddit button */
+.icon-reddit {
+  color: #ff4500;
+}
+.icon-reddit:hover {
+  background-color: #ff4500;
+  color: white;
+}
+
+/* Hackernews button */
+.icon-hackernews {
+  color: #ff4500;
+}
+
+.icon-hackernews:hover {
+  background-color: #ff4500;
+  color: white;
+}
+
+/* LinkedIn button */
+.icon-linkedin {
+  color: #007bb5;
+}
+.icon-linkedin:hover {
+  background-color: #007bb5;
+  color: white;
+}
