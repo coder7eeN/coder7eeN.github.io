@@ -187,7 +187,7 @@ Trong file này đầu tiên chúng ta sẽ cấu hình các alias, đây là c�
 
 ```bash
 Set-Alias vim nvim                                      // viết tắt nvim thành vim
-Set-Alias ll ls                                         // gõ ll thay vì ls hiển thị danh mục
+Set-Alias ll ls                                         // sử dụng ll thay cho ls
 Set-Alias g git                                         // viết tắt g cho git
 Set-Alias tig 'K:\Program Files\Git\usr\bin\tig.exe'    // truy cập nhanh đến tig 
 Set-Alias less 'K:\Program Files\Git\usr\bin\less.exe'  // truy cập nhanh đến less 
