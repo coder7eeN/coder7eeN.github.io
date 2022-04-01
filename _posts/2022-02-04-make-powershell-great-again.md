@@ -186,11 +186,11 @@ nvim .config/powershell/user_profile.ps1
 Trong file này đầu tiên chúng ta sẽ cấu hình các alias, đây là các cách gọi nhanh khác khi sử dụng thư viện.
 
 ```bash
-Set-Alias vim nvim                                        // viết tắt nvim thành vim
-Set-Alias ll ls                                           // để hiển thị danh mục gõ ll thay vì ls
-Set-Alias g git                                           // viết tắt g cho git
-Set-Alias tig 'K:\Program Files\Git\usr\bin\tig.exe'      // truy cập nhanh đến tig 
-Set-Alias less 'K:\Program Files\Git\usr\bin\less.exe'    // truy cập nhanh đến less 
+Set-Alias vim nvim                                      // viết tắt nvim thành vim
+Set-Alias ll ls                                         // gõ ll thay vì ls hiển thị danh mục
+Set-Alias g git                                         // viết tắt g cho git
+Set-Alias tig 'K:\Program Files\Git\usr\bin\tig.exe'    // truy cập nhanh đến tig 
+Set-Alias less 'K:\Program Files\Git\usr\bin\less.exe'  // truy cập nhanh đến less 
 ```
 
 Tiếp theo, mình sẽ thiết lập môi trường chạy cho file cấu hình này. Sử dụng câu lệnh sau
