@@ -7,9 +7,6 @@ tags: powershell
 ---
 
 <style>
-  * {
-  box-sizing: border-box;
-}
 
 img {
   max-width: 100%;
@@ -20,13 +17,14 @@ img {
 .single-img {
   max-width: 100%;
   height: auto;
+  margin-top: 10px;
 }
 
 .column {
   float: left;
-  text-align:center;
   width: 50%;
   padding: 4px;
+  margin-top: 10px;
 }
 
 .single {
@@ -49,9 +47,10 @@ img {
 
 Chuyện là mình có một con máy tính chạy Windows lâu nay chỉ để lướt web và đánh Dota2. Nhân sự kiện sắp phải chia tay với macOS sau gần 4 năm gắn bó, thì mình quyết định chuyển nó thành máy code chính của mình. Mọi thứ đều hoàn hảo đến khi mình mở Windows PowerShell lên để sử dụng, với mình terminal + oh-my-zhs đã là một thứ gì đó không thể thiếu, thì trải nghiệm lúc đó khá là 3 chấm.
 
-Muốn ăn thì phải lăn vào bếp, mình phải xắn tay áo lên để "clone" lại những trải nghiệm đã có của mình từ terminal + oh-my-zhs bên macOS qua. Và đây là câu chuyện nâng cấp nhan sắc và điện nước cho PowerShell của mình :)
+Muốn ăn thì lăn vào bếp, mình phải xắn tay áo lên để "clone" lại những trải nghiệm đã có của mình từ terminal + oh-my-zhs bên macOS qua. Và đây là câu chuyện nâng cấp nhan sắc và điện nước cho PowerShell của mình :)
 
 ## 1. Tổ chức thư mục và thư viện
+
 Đầu tiên là cách tổ chức các thư mục để lưu phần cấu hình cho PowerShell và custom theme cho nó.
 
     └─ $env:USERPROFILE\.config          general folder for library
@@ -69,8 +68,8 @@ Tiếp theo là các thư viện mà mình sẽ sử dụng
   - Fzf, PSFzf - fuzzy finder
   - Neovim - vim
 
-
 ## 2. Cài đặt Windows Terminal, PowerShell
+
 Đây là bước quan trọng nhất, mình cần cài Windows Terminal để có thể cấu hình cho PowerShell và chạy đa nhiệm. Hơn nữa Windows Terminal cho phép chúng ta custom giao diện cho terminal. Tiếp theo là cài PowerShell, nó giúp mình có thể cài được rất nhiều thư viện bên thứ 3 cũng như có rất nhiều cải tiến so với Windows PowerShell mặc định trong máy. Cả 2 apps này đều có thể tải trực tiếp ở Windows Store.
 
 <div class="row">
@@ -82,8 +81,8 @@ Tiếp theo là các thư viện mà mình sẽ sử dụng
   </div>
 </div>
 
-
 ## 3. Terminal settings
+
 Mình lên [Nerd font github](https://github.com/ryanoasis/nerd-fonts) để tải font đã được custom lại với các symbol đặc biệt. Ví dụ như font Ubuntu Mono mình tải trên trang chủ và tải trên này thì font trên trang chủ mình không thể show được các symbol trong lúc mình custom lại phần giao diện cho terminal cũng như lúc xài các theme có sẵn trên Oh My Posh.
 
 Sau khi đã tải được font đúng với sở thích thì mình mở sẽ bắt đầu custom lại cho Windows Terminal, vào phần settings và chỉnh lại các phần sau:
@@ -93,16 +92,16 @@ Sau khi đã tải được font đúng với sở thích thì mình mở sẽ b
   - Acrylic: **On** 
   - Acrylic opacity: **50%**
 
-
 ## 4. Scoop
+
 Để có thể cài đặt các thư viện thông qua command line thì mình sử dụng [Scoop](https://scoop.sh/). Sử dụng lệnh sau để cài đặt Scoop
 
 ```bash
 iwr -useb get.scoop.sh | iex
 ```
 
-
 ## 5. Git
+
 Thư viện quan trọng nhất mà code nô nào cũng phải có trong máy. Ở đây cài đặt git thì có 2 cách, tải file cài về rồi chạy hoặc tải bằng command line, tất nhiên mình sẽ chọn cách sau rồi. Câu lệnh để cài đặt git 
 
 ```bash
@@ -133,7 +132,6 @@ scoop bucket add extras
 scoop install git-aliases
 ```
 
-
 <div class="row">
   <div class="column">
     <img src="/images/blog_illustration/config_powershell/git_demo.png" style="width=100%">
@@ -143,8 +141,8 @@ scoop install git-aliases
   </div>
 </div>
 
-
 ## 6. NeoVim
+
 PowerShell mặc định không có hỗ trợ vim nhưng mình cần sử dụng vim để có thể viết các file config cho PowerShell và Git. Cài đặt NeoVim bằng câu lệnh sau
 
 ```bash
@@ -170,13 +168,12 @@ Lên trang [linode](https://www.linode.com/docs/guides/introduction-to-vim-custo
     <img src="/images/blog_illustration/config_powershell/vim_custom.png" style="width=100%" class="single-img">
 </div>
 
-
 ## 6. Config PowerShell
+
 > - Từ đoạn này mình nghĩ các bạn nên search nhanh cách làm việc với Vim để đọc dễ dàng hơn
 > - Restart lại Windowns Terminal sau khi cài thành công NeoVim
 > - Mình cũng bắt đầu để cấu trúc thư mục để các bạn có thể biết được những thư viện của mình sử dụng sẽ cài vào đâu
 > - Các câu lệnh ở đây chạy tuần tự, xong câu lệnh đầu rồi mới chạy câu lệnh sau
-
 
     └─ $env:USERPROFILE\
 
@@ -262,7 +259,6 @@ Và nhớ xóa đi dòng lệnh sau để không còn chạy theme chọn từ O
 Set-PoshPrompt M365Princess
 ```
 
-
 ## 8. Terminal Icons
 
     └─ $env:USERPROFILE\.config          
@@ -296,7 +292,6 @@ Thư viện z này giúp mình có thể quay lại các folder đã mở lúc t
 ```bash
 Install-Module -Name z -Force
 ```
-
 
 ## 10. PSReadline
 
@@ -350,8 +345,8 @@ Giờ đây chỉ cần nhấn `ctrl + f` là mình đã có thể tìm kiếm n
 Import-Module git-aliases -DisableNameChecking
 ```
 
-
 ## 13. Kết
+
 Giờ thì chạy lại PowerShell để có thể tận hưởng thành quả của mình thôi.
 
 <div class="row">
