@@ -43,9 +43,9 @@ img {
 
 </style>
 
-<p align="center">
-  <img src="/images/blog_illustration/config_powershell/thumbnail_terminal.png" width=100%>
-</p>
+<div class="single">
+  <img src="/images/blog_illustration/config_powershell/thumbnail_terminal.png" style="width=100%" class="single-img">
+</div>
 
 Chuyện là mình có một con máy tính chạy Windows lâu nay chỉ để lướt web và đánh Dota2. Nhân sự kiện sắp phải chia tay với macOS sau gần 4 năm gắn bó, thì mình quyết định chuyển nó thành máy code chính của mình. Mọi thứ đều hoàn hảo đến khi mình mở Windows PowerShell lên để sử dụng, với mình terminal + oh-my-zhs đã là một thứ gì đó không thể thiếu, thì trải nghiệm lúc đó khá là 3 chấm.
 
