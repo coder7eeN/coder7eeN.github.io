@@ -47,7 +47,7 @@ img {
 
 Chuyện là mình có một con máy tính chạy Windows lâu nay chỉ để lướt web và đánh Dota2. Nhân sự kiện sắp phải chia tay với macOS sau gần 4 năm gắn bó, mình quyết định chuyển nó thành máy code chính của mình. Mọi thứ đều hoàn hảo đến khi mình mở Windows PowerShell lên để sử dụng, với mình terminal + oh-my-zhs đã là một thứ gì đó không thể thiếu, thì trải nghiệm lúc đó khá là ngán ngẫm.
 
-Muốn ăn thì lăn vào bếp, vậy là mình quyết định xắn tay áo lên để "clone" lại những trải nghiệm đã có của mình với terminal + oh-my-zhs qua. Và đây là câu chuyện nâng cấp nhan sắc và điện nước cho PowerShell của mình :)
+Muốn ăn thì lăn vào bếp, xắn tay áo lên và "clone" lại những trải nghiệm đã có của mình với terminal + oh-my-zhs qua thôi. Và đây là câu chuyện nâng cấp nhan sắc và điện nước cho PowerShell của mình :)
 
 ## 1. Tổ chức thư mục và thư viện
 
