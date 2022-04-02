@@ -214,6 +214,10 @@ hr {
 	border: 0;
 }
 
+li {
+  margin-left: 2.5rem;
+}
+
 header {
 	flex-basis: 10rem;
 	flex-grow: 1;
@@ -249,6 +253,10 @@ blockquote {
 	padding-left: 2rem;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+blockquote li {
+  margin-left: 0rem;
 }
 
 h1 {
@@ -495,6 +503,7 @@ color: #333;
   text-align: center;
   li {
     text-align: center;
+    margin-left: 0rem;
   }
 }
 
@@ -836,32 +845,4 @@ $link-color: var(--link-color);
 .share-button:hover {
   opacity: 1;
   color: var(--icon-share-hover-color);
-}
-
-.content {
-  ol {
-    counter-reset: list;
-  }
-  ol > li {
-    list-style-position: none;
-    position: relative;
-    list-style: none;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  ul > li {
-    margin: 5px 0 5px 0;
-  }
-  ul {
-    padding: 0 20px 0 20px;;
-  }
-  ol {
-    padding: 0 30px 0 30px;
-  }
-  ol > li:before {
-    content: "[" counter(list, decimal) "] ";
-    counter-increment: list;
-    position: absolute;
-    left: -30px;
-  }
 }
