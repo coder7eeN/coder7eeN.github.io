@@ -45,9 +45,9 @@ img {
   <img src="/images/blog_illustration/config_powershell/thumbnail_terminal.png" style="width=100%" class="single-img">
 </div>
 
-Chuyện là mình có một con máy tính chạy Windows lâu nay chỉ để lướt web và đánh Dota2. Nhân sự kiện sắp phải chia tay với macOS sau gần 4 năm gắn bó, thì mình quyết định chuyển nó thành máy code chính của mình. Mọi thứ đều hoàn hảo đến khi mình mở Windows PowerShell lên để sử dụng, với mình terminal + oh-my-zhs đã là một thứ gì đó không thể thiếu, thì trải nghiệm lúc đó khá là 3 chấm.
+Chuyện là mình có một con máy tính chạy Windows lâu nay chỉ để lướt web và đánh Dota2. Nhân sự kiện sắp phải chia tay với macOS sau gần 4 năm gắn bó, mình quyết định chuyển nó thành máy code chính của mình. Mọi thứ đều hoàn hảo đến khi mình mở Windows PowerShell lên để sử dụng, với mình terminal + oh-my-zhs đã là một thứ gì đó không thể thiếu, thì trải nghiệm lúc đó khá là ngán ngẫm.
 
-Muốn ăn thì lăn vào bếp, mình phải xắn tay áo lên để "clone" lại những trải nghiệm đã có của mình từ terminal + oh-my-zhs bên macOS qua. Và đây là câu chuyện nâng cấp nhan sắc và điện nước cho PowerShell của mình :)
+Muốn ăn thì lăn vào bếp, vậy là mình quyết định xắn tay áo lên để "clone" lại những trải nghiệm đã có của mình với terminal + oh-my-zhs qua. Và đây là câu chuyện nâng cấp nhan sắc và điện nước cho PowerShell của mình :)
 
 ## 1. Tổ chức thư mục và thư viện
 
@@ -70,7 +70,7 @@ Tiếp theo là các thư viện mà mình sẽ sử dụng
 
 ## 2. Cài đặt Windows Terminal, PowerShell
 
-Đây là bước quan trọng nhất, mình cần cài Windows Terminal để có thể cấu hình cho PowerShell và chạy đa nhiệm. Hơn nữa Windows Terminal cho phép chúng ta custom giao diện cho terminal. Tiếp theo là cài PowerShell, nó giúp mình có thể cài được rất nhiều thư viện bên thứ 3 cũng như có rất nhiều cải tiến so với Windows PowerShell mặc định trong máy. Cả 2 apps này đều có thể tải trực tiếp ở Windows Store.
+Đây là bước quan trọng nhất, mình cần cài Windows Terminal để có thể cấu hình cho PowerShell và chạy đa nhiệm. Hơn nữa Windows Terminal cho phép chúng ta custom giao diện cho terminal. Tiếp sau đó là cài PowerShell, nó giúp mình có thể cài được rất nhiều thư viện bên thứ 3 cũng như có rất nhiều cải tiến so với Windows PowerShell mặc định trong máy. Cả 2 apps này đều có thể tải trực tiếp ở Windows Store.
 
 <div class="row">
   <div class="column">
@@ -173,7 +173,7 @@ Lên trang [linode](https://www.linode.com/docs/guides/introduction-to-vim-custo
 > - Từ đoạn này mình nghĩ các bạn nên search nhanh cách làm việc với Vim để đọc dễ dàng hơn
 > - Restart lại Windowns Terminal sau khi cài thành công NeoVim
 > - Mình cũng bắt đầu để cấu trúc thư mục để các bạn có thể biết được những thư viện của mình sử dụng sẽ cài vào đâu
-> - Các câu lệnh ở đây chạy tuần tự, xong câu lệnh đầu rồi mới chạy câu lệnh sau
+> - Các câu lệnh ở đây chạy tuần tự, câu lệnh đầu chạy xong rồi mới chạy câu lệnh sau
 
     └─ $env:USERPROFILE\
 
@@ -205,7 +205,7 @@ Và cấu hình môi trường bằng câu lệnh
 . $env:USERPROFILE\.config\powershell\user_profile.ps1
 ```
 
-Khi làm đến bước này mình có 1 issue, đó là không thể tìm thấy folder PowerShell trong Documents. Đồng thời đường dẫn của mình thông qua OneDrive. Vậy đây là cách xử lý cho nó, mình vào trong folder Documents của OneDrive và tạo folder PowerShell, sau đó chạy lại 2 câu lệnh trên. 
+Khi làm đến bước này mình có 1 issue, đó là không thể tìm thấy folder PowerShell trong Documents. Đó là do trên máy tính mình đường dẫn đến Documents thông qua OneDrive. Vậy đây là cách xử lý cho nó, mình vào trong folder Documents của OneDrive và tạo folder PowerShell, sau đó chạy lại 2 câu lệnh trên. 
 
     └─ $env:USERPROFILE\OneDrive          
         └─ Documents                 
@@ -241,9 +241,9 @@ Import-Module oh-my-posh        // chạy oh-my-posh
 Set-PoshPrompt M365Princess     // sử dụng theme M365Princess
 ```
 
-Oh My Posh cung cấp rất nhiều theme khác nữa, nếu bạn thích thì có thể lên [themes của Oh My Posh](https://ohmyposh.dev/docs/themes) để ngắm và chọn lựa.
+Oh My Posh cung cấp rất nhiều theme khác nữa, nếu bạn thích thì có thể lên [themes của Oh My Posh](https://ohmyposh.dev/docs/themes) để ngắm và lựa chọn.
 
-Như mình thích vọc vạch thì mình sẽ tự custom lại theme, để làm việc này thì mình tạo file `coder7een.omp` để custom lại phần json cho theme. Bạn có thể lên github của từng theme, copy lại phần json rồi tùy chỉnh theo ý muốn của bản thân. Sức mạnh của mã nguồn mở giúp những người thích vọc vạch được phát huy tối đa sở thích của mình :)
+Như mình thích vọc vạch thì mình sẽ tự custom lại theme, để làm việc này thì mình tạo file `coder7een.omp` để custom lại phần json cho theme. Bạn có thể lên github của từng theme, copy lại phần json rồi tùy chỉnh theo ý muốn của bản thân. Sức mạnh của open source giúp những người thích vọc vạch được phát huy tối đa sở thích của mình :)
 
 Sau khi đã tùy chỉnh xong theme đúng với sở thích của mình thì bạn cần cấu hình nó trong `user_profile.ps1`
 
@@ -332,7 +332,7 @@ Import-Module PSFzf
 Set-PSFzfOption -PSReadLineChordProvider 'Ctrl+f' -PSReadLineChordReverseHistory 'Ctrl+r'
 ```
 
-Giờ đây chỉ cần nhấn `ctrl + f` là mình đã có thể tìm kiếm nhanh các thư mục và trở đến thư mục mình cần sử dụng. Tuy thao tác phải tốn thêm 1 bước tổ hợp phím nhưng kết quả thì tương đương.
+Giờ đây chỉ cần nhấn `Ctrl + f` là mình đã có thể tìm kiếm nhanh các thư mục và trở đến thư mục mình cần sử dụng. Tuy thao tác phải tốn thêm 1 bước tổ hợp phím nhưng kết quả thì tương đương.
 
 ## 12. Tinh chỉnh thêm cho git-alias 
 
