@@ -236,9 +236,9 @@ nvim .config/powershell/user_profile.ps1
 Và thêm vào
 
 ```bash
-Import-Module posh-git              // chạy posh-git 
-Import-Module oh-my-posh            // chạy oh-my-posh
-Set-PoshPrompt M365Princess         // sử dụng theme M365Princess
+Import-Module posh-git          // chạy posh-git 
+Import-Module oh-my-posh        // chạy oh-my-posh
+Set-PoshPrompt M365Princess     // sử dụng theme M365Princess
 ```
 
 Oh My Posh cung cấp rất nhiều theme khác nữa, nếu bạn thích thì có thể lên [themes của Oh My Posh](https://ohmyposh.dev/docs/themes) để ngắm và chọn lựa.
@@ -309,7 +309,7 @@ Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -Skip
 Thêm cấu hình trong `user_profile.ps1`
 
 ```bash
-Set-PSReadLineOption -PredictionSource History        // lấy câu lệnh từ History
+Set-PSReadLineOption -PredictionSource History    // lấy câu lệnh từ History
 ```
 
 Bây giờ khi gõ lệnh, mình chỉ cần gõ vài kí tự đầu là nguyên câu lệnh đã được nhắc sẵn rồi, cool :)
