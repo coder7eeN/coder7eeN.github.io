@@ -232,6 +232,7 @@ header li {
 	margin-bottom: 0.2rem;
 	text-align: right;
 	margin-right: 2rem;
+  margin-left: 0rem;
 }
 
 header a.active {
@@ -292,6 +293,7 @@ b {
 
 .photos li {
 	margin-bottom: 1.5rem;
+  margin-left: 0rem;
 }
 
 .photo picture,
@@ -313,6 +315,7 @@ header ul {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 0.8rem;
+  margin-left: 0rem;
 }
 
 .posts li a,
@@ -422,6 +425,7 @@ main {
 	header li {
 		display: inline;
 		margin-right: 1rem;
+    margin-left: 0rem;
 	}
 	.logo {
 		padding-bottom: 1rem;
@@ -568,6 +572,7 @@ color: #333;
 .tags li {
 	white-space: normal;
 	text-overflow: ellipsis;
+  margin-left: 0rem;
 	}
 
 
@@ -601,6 +606,7 @@ $link-color: var(--link-color);
   }
   li {
     padding: 2em 0;
+    margin-left: 0rem;
     @media(max-width: 860px) {
       padding: 2em 0;
     }
