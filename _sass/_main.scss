@@ -854,8 +854,6 @@ $link-color: var(--link-color);
 }
 
 #back-to-top {
-  border: 2px solid var(--link-color);
-  border-radius: 30%;
-  background-color: rgb(244 167 187 / 0%);
-  color: var(--link-color);
+  border: 2px solid #f4a7bb;
+  border-radius: 30;
 }
