@@ -852,3 +852,10 @@ $link-color: var(--link-color);
   opacity: 1;
   color: var(--icon-share-hover-color);
 }
+
+#back-to-top {
+  border: 2px solid var(--link-color);
+  border-radius: 30%;
+  background-color: rgb(244 167 187 / 0%);
+  color: var(--link-color);
+}
