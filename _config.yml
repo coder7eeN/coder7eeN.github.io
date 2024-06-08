@@ -96,4 +96,5 @@ giscus:
   theme: "transparent_dark"
   crossorigin: "anonymous"
 
-  future: true
+future: true
+published: true
