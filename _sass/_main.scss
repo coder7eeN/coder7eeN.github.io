@@ -206,6 +206,8 @@ pre {
 
 img {
 	max-width: 100%;
+  height: auto;
+  border-radius: 3px;
 }
 
 hr {
@@ -855,4 +857,31 @@ $link-color: var(--link-color);
 .share-button:hover {
   opacity: 1;
   color: var(--icon-share-hover-color);
+}
+
+
+// Image in post
+.single-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 4px;
+  margin-top: 10px;
+}
+
+.single {
+  text-align: center;
+  width: 100%;
+  padding: 4px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
