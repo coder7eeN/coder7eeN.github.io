@@ -367,7 +367,7 @@ time {
 
 main {
 	display: flex;
-	max-width: 52rem;
+	max-width: 60rem;
 	margin: -5rem auto 0;
 	padding: 2.4rem 2rem;
 	flex-direction: column;
@@ -839,6 +839,10 @@ $link-color: var(--link-color);
 /* All buttons */
 .share-buttons {
   text-align: center;
+}
+
+.fa.fa-twitter::before{
+	content:"𝕏";
 }
 
 /* Each button */
