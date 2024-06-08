@@ -95,3 +95,5 @@ giscus:
   reaction-enabled: "1"
   theme: "transparent_dark"
   crossorigin: "anonymous"
+
+  future: true
