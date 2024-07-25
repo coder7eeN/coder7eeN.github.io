@@ -19,4 +19,4 @@ Mình hay có thói quen lên kế hoạch, nhưng nhiều khi kế hoạch có 
 - 23/07
   - [x] Đọc hết cuốn sách Foreign Language (sách giúp học cách học 1 ngôn ngữ mới)
 - 25/07
-	- [ ] 2 chapter Flutter Apprentice (3,4)
+	- [ ] 2 chapter Flutter Apprentice (3, 4)
