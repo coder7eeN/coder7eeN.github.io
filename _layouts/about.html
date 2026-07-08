@@ -4,7 +4,7 @@ layout: default
 
 <section class="post">
   <div class="flex-row-between">
-    <a href="{{ site.url }}/">« Home</a>
+    <a href="{{ "/" | relative_url }}">« Home</a>
     <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
       <div></div>
     </button>
@@ -14,5 +14,5 @@ layout: default
 {{ content }}
 
 <section>
-  <nav class="post-nav" /nav>
+  <nav class="post-nav"></nav>
 </section>

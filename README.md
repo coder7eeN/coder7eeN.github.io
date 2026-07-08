@@ -1,70 +1,77 @@
-# Gesko
+# coder seventeen
 
-Simple and minimal Jekyll blog. 
-Forked from [Asko](https://github.com/manuelmazzuola/asko).
-Inspired from [Klisé](https://github.com/piharpi/jekyll-klise)
+Personal Jekyll blog for Huy Pham.
 
-Both had some issues with Github Pages, so I decided to make it work by losing as few features as possible.
-Now easly deployable on Github Pages, with:
+The site started from Gesko, which was forked from [Asko](https://github.com/manuelmazzuola/asko) and inspired by [Klisé](https://github.com/piharpi/jekyll-klise).
 
-### Features
+## Features
 
-- [x] Responsive Design
-- [x] Dark/Ligh theme 🌗
-- [x] Inline CSS
-- [x] Anchor headings
-- [x] Tags & Tag pages 
-- [x] 404 page 
-- [x] Robots.txt 🤖
-- [x] Atom & Json feeds 📡
-- [x] Sass 
-- [x] About page, with Timeline! 🗣️
-- [x] PageSpeed and w3Validator tests PASSED ✔️
-- [x] Search bar 🔎
-- [x] Next & Previous Post ⏮️ ⏭️
+- Responsive Jekyll blog.
+- Light and dark themes with saved user preference.
+- Inline Sass, syntax highlighting, and anchor headings.
+- Tags and tag pages.
+- Search with vendored Simple Jekyll Search.
+- Atom RSS and JSON feeds.
+- Giscus comments and social sharing.
 
-## Backlogs
+## Local Development
 
-- [ ] Improve SEO score on [Lighthouse](lighthouse_test.png) 
+Ruby is pinned to `3.3.4` in `.ruby-version`.
 
-
-
-## Screenshot
-
-![light-theme](https://github.com/P0WEX/Gesko/blob/master/light-theme.jpg)
-![dark-theme](https://github.com/P0WEX/Gesko/blob/master/dark-theme.jpg)
-
-## Installation
-
-Run local server:
-
-```bash
-$ git clone https://github.com/P0WEX/Gesko.git
-$ cd Gesko
-$ bundle install
-$ bundle exec jekyll build
-$ bundle exec jekyll serve
+```sh
+rbenv install 3.3.4
+rbenv local 3.3.4
+bundle install
+bundle exec jekyll build --future
+bundle exec jekyll serve --future
 ```
 
-Navigate to `localhost:4000`. You're Welcome, Fork and be Stargazer.
-If you want to upload it to Github Pages, remember to update the `_congif.yml` and if you are going to upload in a repo called yournickname.github.io, remember to update the `{{ site.baseurl }}` to `{{ site.url }}` .
-Note that there is also a gtag in the [`_layouts/default.html`](https://github.com/P0WEX/Gesko/blob/6776e4afc384dc3d50ce2001715929c8e70a914c/_layouts/default.html#L9), you should remove it.
+Preview at `http://localhost:4000`.
 
-To create new tag, create a folder in `tag/` with the name of the new one. In this folder add an `index.html` file and just add this header:
+## Deployment
+
+The target host is GitHub Pages at `https://coder7een.github.io`.
+
+The workflow in `.github/workflows/jekyll.yml` is build validation only. It runs `bundle exec jekyll build --future` on pushes and pull requests to `main`; it does not deploy the site.
+
+## Creating a Post
+
+Create a Markdown file under `_posts/` named `YYYY-MM-DD-slug.md`.
+
+```yaml
+---
+layout: post
+title: "Post title"
+description: Short SEO/search/share description
+summary: Short list/feed summary
+tags: fastlane cd
+---
 ```
+
+Post images should live under `images/blog_illustration/`. Prefer local paths such as `/images/blog_illustration/example.png` instead of remote raw GitHub URLs.
+
+## Creating a Tag Page
+
+Create `tag/<tag-name>/index.html` with:
+
+```yaml
 ---
 layout: tag
-tag: yourNewTag
+tag: your-tag
 ---
 ```
-Then build again and you're ready!!
+
+The tag value should match the post front matter tag exactly.
+
+## Project Notes
+
+This is not a Node-managed project. The search script is vendored in `assets/js/`, and local development uses Ruby, Bundler, and Jekyll only.
+
+Google Analytics is configured in `_config.yml` with `google_analytics`. Remove that value to disable Analytics.
 
 ## Contributing
 
-Yeaaa feel free to open a pull request.
-
-
-If you see any typos or formatting errors in a post, or want to helping reduce backlogs or any other issue that needs to be addressed, please do not hesitate to open a pull request and fix it!, please read [contributing](./CONTRIBUTING.md) before PR.
+Pull requests for typos, formatting fixes, or site improvements are welcome. Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before opening a PR.
 
 ## License
 

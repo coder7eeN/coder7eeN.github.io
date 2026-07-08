@@ -3,9 +3,11 @@ title: coder seventeen
 description: >-
   Huy's blog
 googlewebfonts: Be+Vietnam:wght@300;700 #more size: wght@300;500;700
+google_analytics: G-LWZXCXY8SC
+logo: /images/favicon_17.png
 
-lang: en-US
-timezone: Ho_Chi_Minh
+lang: vi
+timezone: Asia/Ho_Chi_Minh
 repo: # site repo [optional]
 data-theme: dark # default theme "dark" | "light"
 
@@ -18,9 +20,8 @@ author:
   email: phamnguyenanhhuy@email.com # email adress
 
 # URL settings
-url: "https://coder7een.github.io" # url for runing server
-baseurl: # use for hostname ex: /seventeen, leave blank if it doesn't have
-permalink: # static link
+url: "https://coder7een.github.io"
+baseurl: ""
 permalink: pretty 
 
 
